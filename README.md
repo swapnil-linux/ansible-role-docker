@@ -1,7 +1,7 @@
-Role Name
-=========
+swapnil-indore.docker
+=====================
 
-An Ansible role that installs docker on Centos 7.x
+An Ansible role that installs docker on Centos 7.x and Debian 8. I havent tested it on Ubuntu but should work.
 
 
 Example Playbook
@@ -21,4 +21,4 @@ GPLv2
 Author Information
 ------------------
 
-Swapnil Jain, Swapnil@Linux.Com
+Swapnil Jain, swapnil@linux.com

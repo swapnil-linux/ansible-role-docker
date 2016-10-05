@@ -4,11 +4,18 @@
   yum:
     name: epel-release
     state: latest
+  when: ansible_os_family == 'RedHat'
 - name: Install Docker
   yum:
     name: docker
     enablerepo: extras
     state: latest
+  when: ansible_os_family == 'RedHat'
+- name: Install Docker
+  apt: 
+    name: docker
+    update_cache: yes
+  when: ansible_os_family == 'Debian' 
 - name: manage Docker service
   service:
     name: docker
